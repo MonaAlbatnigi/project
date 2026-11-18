@@ -1,3 +1,23 @@
-body {
-    font-family: "Oswald";
+/* variables */
+:root{
+    --main-color:#10cab7;
+    --secondary-color:#2c4755;
+    --section-background:#f6f6f6;
+}
+
+/* global style */
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    margin:0;
+    padding:0;
+    background-color:#fff;
+    color:#000;
 }
