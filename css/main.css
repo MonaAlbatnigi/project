@@ -17,9 +17,6 @@ html{
 body{
     font-family: 'Work Sans', sans-serif;
     margin:0;
-    padding:0;
-    background-color:#fff;
-    color:#000;
 }
 
 .container{
@@ -32,7 +29,7 @@ body{
 
 /* start header */
 header{
-    padding:20px 0;
+    padding:15px;
 }
 
 header .container{
@@ -54,6 +51,7 @@ header .links ul{
     padding:0;
     display:none;
     margin:0;
+    z-index: 1;
 }
 
 header ul a{
@@ -79,3 +77,33 @@ header .links ul li:not(:last-child) a{
     border-bottom: 1px solid #ddd;
 }
 /* end header */
+
+/* start landing */
+#landing{
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    height: calc(100vh - 60px);
+    position: relative;
+}
+
+#landing .intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 320px;
+}
+
+#landing h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--main-color);  
+    margin: 0; 
+}
+
+#landing p{
+    font-size: 20px;
+    line-height: 2;
+}
+/* end landing */
